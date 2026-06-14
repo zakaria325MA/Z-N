@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى حبيبتي ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons (via CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="fixed-overlay bg-soft-pink z-max">
+        <div class="bg-container"></div>
+        <div class="glass-card welcome-card text-center p-10 animate-fade-in">
+            <div class="heart-icon mb-8 animate-pulse">
+                <i data-lucide="heart" fill="#ff4d6d"></i>
+            </div>
+            <h1 class="text-3xl font-bold mb-4">مرحباً بك في عالمنا الصغير ❤️</h1>
+            <p class="text-gray-600 mb-8">دخلي الكود السري باش تفتحي الهدية...</p>
+            
+            <div class="mb-8">
+                <input type="text" id="password-input" placeholder="كتبي الكود السري هنا... ❤️" class="password-input">
+                <p id="password-error" class="text-red-500 text-sm mt-2 hidden">كود غاااالط! ❌</p>
+            </div>
+
+            <button id="start-btn" class="btn-primary w-full">فتحي الموقع ✨</button>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden initially) -->
+    <div id="main-content" class="hidden">
+        <!-- Floating Elements -->
+        <div id="heart-container" class="pointer-events-none fixed-inset"></div>
+        <div id="side-message" class="fixed-side glass-card animate-slide-in">
+            <div class="flex items-center gap-4">
+                <div class="text-right">
+                    <p class="text-sm font-bold text-primary-dark">مرحباً بك في عالمنا الصغير ❤️</p>
+                    <p class="text-[10px] text-gray-500 italic">فتحي هاد الهدية بكل حب...</p>
+                </div>
+                <div class="bg-primary-light p-2 rounded-full">
+                    <i data-lucide="heart" size="20" fill="#ff4d6d"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-container main-bg"></div>
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center justify-center py-20">
+            <div class="glass-card p-12 text-center max-w-2xl mx-auto scroll-reveal">
+                <div class="hero-photo-wrap mb-8">
+                    <div class="hero-photo rounded-full border-4 border-white shadow-2xl overflow-hidden">
+                        <img src="./assets/user_photo.jpg" alt="My Love">
+                    </div>
+                    <div class="hero-heart-badge">
+                        <i data-lucide="heart" fill="#ff4d6d"></i>
+                    </div>
+                </div>
+                <h1 class="section-title text-5xl md:text-7xl mb-6">إلى غاليتي سلمى</h1>
+                <p class="text-2xl md:text-3xl mb-10 italic font-medium text-primary-dark">"محطيتش فيك العين، حطيت فيك القلب."</p>
+                <div class="animate-bounce mt-8 text-primary">
+                    <p class="font-semibold">هبطي لتحت شوفي قصتنا</p>
+                    <div class="text-2xl">↓</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Together Time -->
+        <section class="py-20 bg-primary-light text-center">
+            <div class="container">
+                <div class="glass-card p-10 max-w-3xl mx-auto scroll-reveal">
+                    <div class="heart-pulse mb-6">
+                        <i data-lucide="heart" size="64" fill="#ff4d6d"></i>
+                    </div>
+                    <h2 class="section-title mb-8">حكايتنا بدات فـ Instagram هادي...</h2>
+                    <div class="time-counter">
+                        <div class="time-item"><span>1</span><p>عـام</p></div>
+                        <div class="time-separator">و</div>
+                        <div class="time-item"><span>6</span><p>أشهـر</p></div>
+                    </div>
+                    <p class="text-xl mt-10 italic">"كل نهار داز معاك كان أحلى نهار في حياتي.. ومازال جاي الخير!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="py-20">
+            <div class="container">
+                <h2 class="section-title text-center mb-16">حكايتنا في سطور ✨</h2>
+                <div class="timeline-container relative">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-items">
+                        <div class="timeline-item scroll-reveal">
+                            <div class="timeline-icon">📱</div>
+                            <div class="glass-card timeline-content">
+                                <span class="text-primary font-bold">البداية f Instagram</span>
+                                <p>أول ميساج، أول ضحكة.. تما فين بكات القصة ديالنا ✨</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item scroll-reveal alternate">
+                            <div class="timeline-icon">✨</div>
+                            <div class="glass-card timeline-content">
+                                <span class="text-primary font-bold">اللقاء الأول</span>
+                                <p>أول نهار تلاقينا فيه وكان كلشي تبدل..</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item scroll-reveal">
+                            <div class="timeline-icon">❤️</div>
+                            <div class="glass-card timeline-content">
+                                <span class="text-primary font-bold">دابا</span>
+                                <p>1 عام و 6 شهور ديال الحب والسعادة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="py-24 text-center">
+            <div class="container">
+                <h2 class="section-title mb-16">أحلى ذكرياتنا ✨</h2>
+                <div id="gallery-grid" class="gallery-grid">
+                    <!-- Gallery items will be injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Relationship Quiz -->
+        <section class="container py-24">
+            <div id="quiz-container" class="max-w-2xl mx-auto glass-card p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
+                <div id="quiz-content">
+                    <div class="heart-pulse mb-8">
+                        <i data-lucide="heart" size="40" fill="#ff4d6d"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">جاوبي على علاقتنا ❤️</h2>
+                    <p class="text-gray-600 mb-10 italic">بغيت نعرف شنو فقلبك... 💭</p>
+                    
+                    <div id="quiz-step" class="mb-10">
+                        <label id="quiz-question" class="block text-xl font-medium mb-6 text-right"></label>
+                        <textarea id="quiz-textarea" class="w-full p-6 rounded-2xl bg-white/50 border-2 border-primary/20 focus:border-primary transition-all min-h-[150px] text-right text-lg resize-none shadow-inner"></textarea>
+                    </div>
+
+                    <div class="quiz-footer">
+                        <div id="quiz-dots" class="flex space-x-2"></div>
+                        <button id="quiz-next" class="btn-primary flex items-center gap-2">
+                            <span id="quiz-btn-text">السؤال لي جاي</span>
+                            <i data-lucide="heart" size="18"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="quiz-success" class="hidden py-10">
+                    <div class="success-icon mb-8">
+                        <i data-lucide="check-circle-2" size="60" color="#22c55e"></i>
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6">وصلني ميساجك! ❤️</h2>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">شكراً حيت جاوبتي من قلبك. راني صيفت الأجوبة ديالك فـ WhatsApp باش يبقاو ديما عندنا.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reasons -->
+        <section class="py-20">
+            <div class="container text-center">
+                <h2 class="section-title mb-16">
+                    <span class="heart-pulse"><i data-lucide="heart" fill="#ff4d6d"></i></span> 
+                    علاش كنبغيك؟ 
+                    <span class="heart-pulse"><i data-lucide="heart" fill="#ff4d6d"></i></span>
+                </h2>
+                <div class="reasons-grid">
+                    <div class="glass-card reason-card scroll-reveal">
+                        <p>حيت نتي هي الوحيدة اللي كتفهميني بلا ما نهضر.</p>
+                    </div>
+                    <div class="glass-card reason-card scroll-reveal">
+                        <p>حيت ضحكتك هي اللي كتخلي نهاري يكون زوين.</p>
+                    </div>
+                    <div class="glass-card reason-card scroll-reveal">
+                        <p>حيت فيك لقيت الصديقة، الحبيبة، والعالم ديالي كامل.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Request -->
+        <section class="container py-20">
+            <div class="max-w-xl mx-auto glass-card p-10 text-center border-b-8 border-primary shadow-2xl rounded-[40px] scroll-reveal">
+                <h3 class="text-3xl font-black mb-10 text-primary-dark">بغيت منك واحد الحاجة توحشتها... <br> نتي عارفة شنو هيا 😉</h3>
+                <div id="personal-request-ui">
+                    <div class="flex">
+                        <div id="opt-yes" class="choice-box">
+                            <div class="choice-circle"><span>Ah</span></div>
+                            <span class="choice-label">آه</span>
+                        </div>
+                        <div id="opt-no" class="choice-box">
+                            <div class="choice-circle no-choice"><span>La</span></div>
+                            <span class="choice-label">لا</span>
+                        </div>
+                    </div>
+                    <button id="send-request-btn" class="btn-primary w-full" disabled>
+                        <span>صيفطي ليا الجواب ❤️</span>
+                    </button>
+                </div>
+                <div id="request-success" class="hidden py-10">
+                    <i data-lucide="heart" size="50" fill="#ff4d6d" class="mx-auto mb-4"></i>
+                    <p class="text-xl font-bold text-gray-700">وصلني الجواب.. راني كنتسنى! 👀🔥</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Zakaria (Replacing Countdown) -->
+        <section id="about-zakaria" class="py-24">
+            <div class="container">
+                <div class="max-w-3xl mx-auto glass-card p-12 text-center shadow-2xl border-t-8 border-primary scroll-reveal">
+                    <div class="heart-pulse mb-8">
+                        <i data-lucide="pen-tool" size="48" class="text-primary"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6 text-primary-dark">عاودي ليا شوية على زكرياء ❤️</h2>
+                    <p class="text-gray-600 mb-8 italic">شنو هو زكرياء بالنسبة ليك؟ شنو كيعجبك فيه؟ 💭</p>
+                    
+                    <div class="mb-10 text-right">
+                        <textarea id="about-zakaria-text" placeholder="كتبي هنا داكشي اللي فقلبك على زكرياء... ❤️"></textarea>
+                    </div>
+
+                    <button id="send-about-zakaria" class="btn-primary w-full">
+                        <span>صيفطي هاد الهضرة لزكرياء</span>
+                        <i data-lucide="heart" size="20"></i>
+                    </button>
+
+                    <div id="about-zakaria-success" class="hidden mt-8 py-4 animate-fade-in">
+                        <p class="text-green-600 font-bold text-xl">وصلو الميساج! غيفرح بزاف ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-10 text-center opacity-70">
+            <p>Ssaybo Walid b ❤️ le l'hbiba dialo</p>
+        </footer>
+    </div>
+
+    <!-- Music Player (Hidden) -->
+    <div id="music-player" class="hidden-player">
+        <iframe id="youtube-iframe" src="" allow="autoplay"></iframe>
+    </div>
+
+    <!-- Modal for Gallery -->
+    <div id="gallery-modal" class="modal z-max hidden">
+        <div class="modal-content glass-card relative overflow-hidden">
+            <button id="close-modal" class="absolute top-6 right-6 z-20 bg-white/20 p-2 rounded-full backdrop-blur-md">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="flex flex-col md:flex-row h-full">
+                <div class="md:w-1/2 h-[300px] md:h-full">
+                    <img id="modal-img" src="" class="w-full h-full object-cover">
+                </div>
+                <div class="md:w-1/2 p-10 md:p-14 flex flex-col justify-center text-right bg-white" dir="rtl">
+                    <span class="text-primary font-bold text-sm tracking-widest mb-2 uppercase">ذكرياتنا الغالية</span>
+                    <h3 id="modal-title" class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"></h3>
+                    <div class="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
+                    <p id="modal-caption" class="text-xl md:text-2xl leading-relaxed text-gray-700 italic"></p>
+                    <div class="mt-12 flex items-center justify-end text-primary font-bold">
+                        <span>قصة حبنا لا تنتهي</span>
+                        <i data-lucide="heart" size="20" fill="#ff4d6d" class="mr-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
